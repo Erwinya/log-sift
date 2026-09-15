@@ -2,27 +2,22 @@
 
 Parse application / access logs and summarize status codes, top endpoints, and error samples.
 
-## Run
+## Status
+
+CLI scaffolding and log file loading are in place. Status/path parsing and JSON reports will land in follow-up commits.
+
+## Run (current)
 
 ```powershell
 python src\log_sift.py --file samples\app.log
 ```
 
-JSON output:
+Prints file path, byte size, and non-empty line count. Exit `2` if the file is missing.
 
-```powershell
-python src\log_sift.py --file samples\app.log --json
-```
+## Requirements
 
-## Options
-
-- `--file` — log file to analyze (required)
-- `--json` — emit a JSON summary instead of plain text
-
-## Exit codes
-
-- `0` — report generated successfully
-- `2` — log file not found
+- Python 3.10+
+- Standard library only
 
 ## License
 
