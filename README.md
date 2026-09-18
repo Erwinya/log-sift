@@ -4,12 +4,13 @@ Parse application / access logs and summarize status codes, top endpoints, and e
 
 ## Status
 
-Status-code and top-path parsing are in place. Level/error samples and `--json` output will land in follow-up commits.
+Status codes, top paths, log levels, error samples, and `--json` output are in place. Packaging / tests will land in follow-up commits.
 
 ## Run
 
 ```powershell
 python src\log_sift.py --file samples\app.log
+python src\log_sift.py --file samples\app.log --json
 ```
 
 ## Requirements

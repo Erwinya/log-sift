@@ -3,3 +3,6 @@
 127.0.0.1 - - [17/Sep/2026:08:00:03 +0000] "POST /api/v1/users HTTP/1.1" 201 80
 127.0.0.1 - - [17/Sep/2026:08:00:04 +0000] "GET /missing HTTP/1.1" 404 19
 2026-09-17T08:00:05Z 500 GET /api/v1/boom
+2026-09-17T08:00:06Z ERROR database connection timed out
+2026-09-17T08:00:07Z WARN retrying upstream /api/v1/users
+2026-09-17T08:00:08Z INFO request completed in 12ms
