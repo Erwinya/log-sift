@@ -4,7 +4,7 @@ Parse application / access logs and summarize status codes, top endpoints, and e
 
 ## Status
 
-Status codes, top paths, log levels, error samples, and `--json` output are in place. Packaging / tests will land in follow-up commits.
+Core analysis, `--json`, packaging (`pyproject.toml`), and unit tests are in place.
 
 ## Run
 
@@ -13,10 +13,24 @@ python src\log_sift.py --file samples\app.log
 python src\log_sift.py --file samples\app.log --json
 ```
 
+Install locally (optional):
+
+```powershell
+pip install -e .
+log-sift --file samples\app.log
+```
+
+## Development
+
+```powershell
+pip install -e ".[dev]"
+pytest
+```
+
 ## Requirements
 
 - Python 3.10+
-- Standard library only
+- Standard library only (pytest optional for tests)
 
 ## License
 
