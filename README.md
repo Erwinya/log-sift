@@ -4,7 +4,7 @@ Parse application / access logs and summarize status codes, top endpoints, and e
 
 ## Status
 
-Core analysis, `--json`, packaging (`pyproject.toml`), and unit tests are in place.
+Ready for use: analysis, `--json`, packaging, unit tests, and CI.
 
 ## Run
 
