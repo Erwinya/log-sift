@@ -27,6 +27,18 @@ pip install -e ".[dev]"
 pytest
 ```
 
+## Exit codes
+
+- `0` — success
+- `2` — file not found / usage error
+
+In PowerShell, check `$LASTEXITCODE` after a run:
+
+```powershell
+python src\log_sift.py --file samples\app.log
+if ($LASTEXITCODE -ne 0) { Write-Error "log-sift failed with exit code $LASTEXITCODE" }
+```
+
 ## Requirements
 
 - Python 3.10+
